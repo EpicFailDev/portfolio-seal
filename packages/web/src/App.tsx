@@ -76,7 +76,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
         <div className="text-xl font-bold tracking-tighter text-white z-50">
-          Guilherme Muller<span className="text-emerald-400">.</span>
+          JOHN DOE<span className="text-emerald-400">.</span>
         </div>
 
         <div className="hidden md:flex gap-8 text-sm font-medium text-zinc-400">
@@ -257,10 +257,10 @@ const Contact = () => {
 
           <Reveal delay={0.2}>
             <a
-              href="mailto:guilherme.muller.dev@gmail.com"
+              href="mailto:hello@example.com"
               className="text-2xl md:text-4xl text-zinc-400 hover:text-white transition-colors border-b border-zinc-700 hover:border-white pb-2 mb-16 inline-block"
             >
-              guilherme.muller.dev@gmail.com
+              hello@johndoe.dev
             </a>
           </Reveal>
 
@@ -285,7 +285,7 @@ const Footer = () => {
   return (
     <footer className="py-8 bg-zinc-950 border-t border-white/5">
       <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
-        <p className="text-zinc-600 text-sm">Copyright 2024 Guilherme Muller. All rights reserved.</p>
+        <p className="text-zinc-600 text-sm">Copyright 2024 John Doe. All rights reserved.</p>
         <p className="text-zinc-600 text-sm flex items-center gap-1">Designed & Built with love.</p>
       </div>
     </footer>
@@ -294,7 +294,7 @@ const Footer = () => {
 
 export default function App() {
   return (
-    <div className="bg-black min-h-screen selection:bg-emerald-500/30 selection:text-emerald-200 font-sans">
+    <div className="bg-zinc-950 min-h-screen selection:bg-emerald-500/30 selection:text-emerald-200 font-sans">
       <Navbar />
       <main>
         <Hero />
