@@ -14,7 +14,11 @@ export const Navbar = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    const navLinks = ['Trabalhos', 'Sobre', 'Serviços', 'Contato'];
+    const navLinks = [
+        { label: 'Trabalhos', href: '#work' },
+        { label: 'Sobre', href: '#about' },
+        { label: 'Contato', href: '#contact' }
+    ];
 
     return (
         <nav
@@ -27,8 +31,8 @@ export const Navbar = () => {
 
                 <div className="hidden md:flex gap-8 text-sm font-medium text-zinc-400">
                     {navLinks.map((item) => (
-                        <a key={item} href={`#${item.toLowerCase()}`} className="hover:text-white transition-colors duration-300">
-                            {item}
+                        <a key={item.label} href={item.href} className="hover:text-white transition-colors duration-300">
+                            {item.label}
                         </a>
                     ))}
                 </div>
@@ -48,12 +52,12 @@ export const Navbar = () => {
                         >
                             {navLinks.map((item) => (
                                 <a
-                                    key={item}
-                                    href={`#${item.toLowerCase()}`}
+                                    key={item.label}
+                                    href={item.href}
                                     onClick={() => setIsOpen(false)}
                                     className="text-4xl font-bold tracking-tighter text-zinc-300 hover:text-white"
                                 >
-                                    {item}
+                                    {item.label}
                                 </a>
                             ))}
                         </motion.div>

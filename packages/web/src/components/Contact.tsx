@@ -12,7 +12,7 @@ export const Contact = () => {
 
                     <Reveal delay={0.2}>
                         <a
-                            href="mailto:contato@guilhermemuller.com"
+                            href="mailto:Guilherme.deSouza0125@gmail.com"
                             className="text-2xl md:text-4xl text-zinc-400 hover:text-white transition-colors border-b border-zinc-700 hover:border-white pb-2 mb-16 inline-block"
                         >
                             contato@guilhermemuller.com

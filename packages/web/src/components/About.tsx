@@ -1,4 +1,5 @@
 import { Reveal } from './Reveal';
+import ProfileImage from '../assets/Perfil.png';
 
 export const About = () => {
     return (
@@ -9,10 +10,11 @@ export const About = () => {
                         <Reveal>
                             <h2 className="text-4xl md:text-5xl font-bold tracking-tighter text-white mb-8">Sobre Mim</h2>
                             <div className="w-full h-[400px] bg-zinc-900 rounded-lg overflow-hidden relative group">
-                                <div className="absolute inset-0 bg-zinc-800 flex items-center justify-center text-zinc-600">
-                                    {/* Placeholder for actual image */}
-                                    <span className="text-center px-4">Foto de Guilherme</span>
-                                </div>
+                                <img
+                                    src={ProfileImage}
+                                    alt="Guilherme Muller de Souza"
+                                    className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                                />
                             </div>
                         </Reveal>
                     </div>
